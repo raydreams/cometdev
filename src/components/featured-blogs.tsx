@@ -291,7 +291,7 @@ export function FeaturedBlogs() {
             </div>
             <h3 className="text-xl font-semibold text-white mb-4">Coming Soon</h3>
             <p className="text-gray-400 max-w-md mx-auto">
-              We're working on exciting blog content. Check back soon for the latest updates and insights!
+              We&apos;re working on exciting blog content. Check back soon for the latest updates and insights!
             </p>
           </div>
         )}
