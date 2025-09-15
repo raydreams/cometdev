@@ -48,7 +48,7 @@ export function JobApplication({ job, onBack }: JobApplicationProps) {
           </div>
           <h2 className="text-3xl font-bold mb-4">Application Submitted!</h2>
           <p className="text-gray-300 mb-8">
-            Thank you for your interest in joining the Comet team. We'll review your application and get back to you
+            Thank you for your interest in joining the Comet team. We&apos;ll review your application and get back to you
             within 5-7 business days.
           </p>
           <Button onClick={onBack} className="bg-white text-black hover:bg-gray-200 rounded-full px-8">

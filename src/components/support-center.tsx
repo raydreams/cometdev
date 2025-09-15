@@ -134,7 +134,7 @@ export function SupportCenter() {
                   <li className="flex items-start space-x-2">
                     <span className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0"></span>
                     <span>
-                      <strong>Windows:</strong> Press Win + R, type "dxdiag", press Enter
+                      <strong>Windows:</strong> Press Win + R, type &quot;dxdiag&quot;, press Enter
                     </span>
                   </li>
                   <li className="flex items-start space-x-2">
@@ -146,7 +146,7 @@ export function SupportCenter() {
                   <li className="flex items-start space-x-2">
                     <span className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0"></span>
                     <span>
-                      <strong>Linux:</strong> Run "lscpu" and "lshw" in terminal
+                      <strong>Linux:</strong> Run &quot;lscpu&quot; and &quot;lshw&quot; in terminal
                     </span>
                   </li>
                 </ul>
