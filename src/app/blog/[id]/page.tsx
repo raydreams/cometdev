@@ -5,14 +5,9 @@ import { BlogPost } from "@/components/blog-post"
 import { ScrollToTop } from "@/components/scroll-to-top"
 import { notFound } from "next/navigation"
 
-interface BlogPostPageProps {
-  params: {
-    id: string
-  }
-}
-
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const blog = getBlogPost(params.id)
+export default async function BlogPostPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const blog = getBlogPost(id)
 
   if (!blog) {
     notFound()
