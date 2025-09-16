@@ -6,6 +6,7 @@ import { Download } from "@/components/download"
 import { Footer } from "@/components/footer"
 import { FeaturedBlogs } from "@/components/featured-blogs"
 import { ScrollToTop } from "@/components/scroll-to-top"
+import { BackToTopButton } from "@/components/backtotop"
 //import { OverlayDemo } from "@/components/overlay-demo"
 
 export default function HomePage() {
@@ -13,6 +14,7 @@ export default function HomePage() {
     <main className="min-h-screen bg-black text-white">
       <ScrollToTop />
       <div className="pt-24">
+        <BackToTopButton />
         <Hero />
         <Features />
         <Performance />

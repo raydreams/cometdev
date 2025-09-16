@@ -81,7 +81,11 @@ export function Navigation() {
 
             {/* CTA and Mobile Menu */}
             <div className="flex items-center space-x-4">
-              <Button className="bg-white text-black hover:bg-gray-100 rounded-xl px-6 py-3 font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hidden sm:flex items-center space-x-2">
+              <Button className="bg-white text-black hover:bg-gray-100 rounded-xl px-6 py-3 font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hidden sm:flex items-center space-x-2"
+              onClick={() => {
+                window.location.href = "/download"
+              }}
+              >
                 <RiImportFill className="w-4 h-4" />
                 <span>Download</span>
               </Button>

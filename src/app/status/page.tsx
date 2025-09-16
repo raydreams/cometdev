@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { SystemStatus } from "@/components/system-status"
+import { LiveStatus } from "@/components/live-status"
 import { ScrollToTop } from "@/components/scroll-to-top"
 
 export default function StatusPage() {
@@ -24,7 +24,7 @@ export default function StatusPage() {
             Real-time status of all Comet Client services and infrastructure.
           </p>
         </div>
-        <SystemStatus />
+        <LiveStatus />
       </div>
       <Footer />
     </main>

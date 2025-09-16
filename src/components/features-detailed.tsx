@@ -7,7 +7,7 @@ export function FeaturesDetailed() {
       items: [
         {
           title: "Lightning Fast Launch",
-          description: "Get into your world in just 2.3 seconds with our optimized startup sequence.",
+          description: "Get into your world in just 9.3 seconds with our optimized startup sequence.",
           Icon: RiSpeedUpFill,
           benefits: ["50% faster than competitors", "Optimized mod loading", "Instant world access"],
         },

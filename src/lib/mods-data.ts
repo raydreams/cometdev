@@ -8,10 +8,11 @@ import {
   RiBrushFill,
   RiCpuFill,
   RiTimerFlashFill,
-  RiEye2Fill,
+  RiOutletFill,
   RiTShirt2Fill,
   RiHammerFill,
-  RiLeafFill,
+  RiGridFill,
+  RiReceiptFill,
 } from "react-icons/ri"
 import { IconType } from "react-icons"
 
@@ -34,10 +35,10 @@ export interface ModsRow {
 }
 
 export const loaderIcons: Record<ModLoader, { label: string; icon: IconType; color: string }> = {
-  optifine: { label: "OptiFine", icon: RiEye2Fill, color: "text-sky-300" },
-  fabric: { label: "Fabric", icon: RiTShirt2Fill, color: "text-yellow-300" },
-  forge: { label: "Forge", icon: RiHammerFill, color: "text-orange-300" },
-  quilt: { label: "Quilt", icon: RiLeafFill, color: "text-emerald-300" },
+  optifine: { label: "OptiFine", icon: RiOutletFill, color: "text-[#932D2E]" },
+  fabric: { label: "Fabric", icon: RiReceiptFill, color: "text-[#DBD0B4]" },
+  forge: { label: "Forge", icon: RiHammerFill, color: "text-[#1D2C41]" },
+  quilt: { label: "Quilt", icon: RiGridFill, color: "text-[#DC29DD]" },
 }
 
 export const modsTimeline: ModsRow[] = [

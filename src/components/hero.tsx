@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from "@/components/ui/button"
 import { Navigation } from "@/components/navigation"
 import {
@@ -33,8 +35,8 @@ export function Hero() {
           <div className="text-center mb-16">
             {/* Logo with glow effect */}
             <div className="mb-12 relative">
-              <div className="w-40 h-40 bg-white rounded-full mx-auto flex items-center justify-center shadow-2xl relative group">
-                <span className="text-black font-bold text-6xl">C</span>
+              <div className="w-40 h-40 bg-black/90 rounded-full mx-auto flex items-center justify-center shadow-2xl relative group">
+                <img src="/comet.svg" alt="Comet logo" className="w-45 h-45" />
                 <div className="absolute inset-0 bg-white rounded-full opacity-20 blur-2xl group-hover:opacity-30 transition-opacity duration-500"></div>
               </div>
             </div>
@@ -46,9 +48,9 @@ export function Hero() {
             </div>
 
             <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto leading-relaxed">
-              The fastest, cleanest, & most minmalisti Minecraft client ever built.
+              The fastest, cleanest & most minimalistic Minecraft client ever built.
               <br />
-              Zero bloat, maximum performance, & with infinite possibilities.
+              Zero bloat, maximum performance, infinite possibilities.
             </p>
 
             {/* Enhanced CTA section */}
@@ -56,10 +58,17 @@ export function Hero() {
               <Button
                 size="lg"
                 className="bg-white text-black hover:bg-gray-100 rounded-full px-12 py-6 text-xl font-bold shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:scale-105 flex items-center space-x-3"
+                onClick={
+                  () => {
+                    window.location.href = "/download"
+                  }
+                }
+
               >
                 <RiDownload2Fill className="w-6 h-6" />
-                <span>Download Free</span>
+                <span>Download</span>
               </Button>
+              {/*
               <Button
                 variant="outline"
                 size="lg"
@@ -68,6 +77,7 @@ export function Hero() {
                 <RiPlayLargeFill className="w-6 h-6" />
                 <span>Watch Demo</span>
               </Button>
+              */}
             </div>
           </div>
 
@@ -131,19 +141,19 @@ export function Hero() {
             {[
               {
                 title: "Lightning Fast",
-                desc: "Optimized from the ground up for maximum performance",
+                desc: "Optimized from the ground up for maximum performance and speed.",
                 icon: RiCloudWindyFill,
                 color: "text-yellow-400",
               },
               {
                 title: "Universal Mods",
-                desc: "Full compatibility with Fabric, Quilt, and NeoForge",
+                desc: "Full compatibility with Fabric, Forge, Quilt, and OptiFine.",
                 icon: RiDashboardFill,
                 color: "text-blue-400",
               },
               {
                 title: "Zero Bloat",
-                desc: "Clean interface with only the features you need",
+                desc: "Most minimalistic client, with only the features you require.",
                 icon: RiSparkling2Fill,
                 color: "text-purple-400",
               },
@@ -167,13 +177,6 @@ export function Hero() {
               </div>
             ))}
           </div>
-        </div>
-      </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-bounce"></div>
         </div>
       </div>
     </section>

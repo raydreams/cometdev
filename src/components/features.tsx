@@ -19,25 +19,25 @@ export function Features() {
       details: ["Optimized rendering pipeline", "Efficient memory management", "Instant mod loading"],
     },
     {
-      title: "Universal Mod Support",
+      title: "Universal Support",
       description:
-        "Full compatibility with Fabric, Quilt, and NeoForge. Install any mod with our unified drag-and-drop interface.",
+        "Full compatibility with OptiFine, Fabric, Forge, and Quilt. Install any mod with our unified drag-and-drop interface.",
       icon: RiQuillPenAiFill,
       iconColor: "text-blue-400",
       stats: "3 mod loaders",
-      details: ["Fabric compatibility", "Quilt support", "NeoForge integration"],
+      details: ["Fabric compatibility", "Forge compatibility", "Quilt compatibility"],
     },
     {
-      title: "Clean Interface",
+      title: "Minimalistic Interface",
       description:
-        "No clutter, no distractions. Just Play, Mods, and Settings. Focus on what matters most - your gameplay.",
+        "No clutter, no distractions. Just focus on what matters most - your gameplay. No unnecessary features, just important ones.",
       icon: RiWindow2Fill,
       iconColor: "text-purple-400",
       stats: "Zero bloat",
-      details: ["Minimal UI design", "Distraction-free experience", "Intuitive navigation"],
+      details: ["Minimal UI design", "Distraction-free experience", "Lightweight"],
     },
     {
-      title: "Built-in Optimization",
+      title: "Built-in Performance Mods",
       description: "Sodium, Iris, Lithium, and 100+ performance mods come pre-installed and perfectly configured.",
       icon: RiFolderShield2Fill,
       iconColor: "text-green-400",
@@ -47,7 +47,7 @@ export function Features() {
     {
       title: "Social Features",
       description:
-        "Connect with friends, host worlds, and chat in real-time. All seamlessly integrated without UI clutter.",
+        "Connect with friends, host worlds, and chat in real-time. All seamlessly integrated without UI clutter or decrease in performance.",
       icon: RiMessage3Fill,
       iconColor: "text-pink-400",
       stats: "Real-time sync",
@@ -80,17 +80,16 @@ export function Features() {
         <div className="text-center mb-20">
           <div className="inline-flex items-center space-x-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-2 mb-8">
             <span className="w-2 h-2 bg-white rounded-full"></span>
-            <span className="text-sm text-gray-200">Why developers choose Comet</span>
+            <span className="text-sm text-gray-200">Features</span>
           </div>
 
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">
-            Why People
+            Why do users
             <br />
-            <span className="text-gray-200">Prefer Us</span>
+            <span className="text-gray-200">choose Comet?</span>
           </h2>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Every feature is designed to enhance your Minecraft experience while maintaining the highest performance
-            standards.
+            Every aspect of Comet Client is designed to enhance your experience whilst maintaining the highest performance & speed to ensure the best experience.
           </p>
         </div>
 
@@ -147,16 +146,6 @@ export function Features() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-20">
-          <div className="inline-flex items-center space-x-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-8 py-4">
-            <span className="text-gray-200">Ready to experience the difference?</span>
-            <button className="bg-gradient-to-r from-white to-gray-200 text-black hover:from-gray-100 hover:to-gray-300 rounded-full px-6 py-2 font-semibold">
-              Download Now
-            </button>
-          </div>
         </div>
       </div>
     </section>

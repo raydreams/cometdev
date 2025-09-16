@@ -23,10 +23,9 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               {[
-                { name: "Discord", icon: MessageCircle, href: "#" },
-                { name: "Twitter", icon: Twitter, href: "#" },
-                { name: "GitHub", icon: Github, href: "#" },
-                { name: "YouTube", icon: Youtube, href: "#" },
+                { name: "Discord", icon: MessageCircle, href: "https://discord.gg/TgvVFmZTgG" },
+                { name: "Twitter", icon: Twitter, href: "https://x.com/CometClient" },
+                { name: "GitHub", icon: Github, href: "https://github.com/CometClient" },
               ].map((social) => (
                 <a
                   key={social.name}
@@ -65,34 +64,9 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Company links */}
-          <div>
-            <h3 className="font-semibold text-lg mb-6 text-white flex items-center space-x-2">
-              <Heart className="w-5 h-5" />
-              <span>Company</span>
-            </h3>
-            <div className="space-y-4">
-              {[
-                { href: "/about", label: "About Us" },
-                { href: "/careers", label: "Careers" },
-                { href: "/blog", label: "Blog" },
-                { href: "/press", label: "Press Kit" },
-                { href: "/brand", label: "Brand Assets" },
-              ].map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="block text-gray-400 hover:text-white transition-colors duration-300 hover:translate-x-1 transform"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
           {/* Support links */}
           <div>
-            <h3 className="font-semibold text-lg mb-6 text-white flex items-center space-x-2">
+            <h3 className="font-semibold text-lg mb-6 text-white flex items-center space-x-2 items-right">
               <Code className="w-5 h-5" />
               <span>Support</span>
             </h3>
@@ -115,6 +89,10 @@ export function Footer() {
             </div>
           </div>
         </div>
+
+
+        {/* Random Quote Section */}
+        <RandomQuote />
 
         {/* Newsletter signup */}
         <div className="relative bg-white/5 rounded-2xl p-6 mb-12 border border-white/10">
@@ -146,9 +124,6 @@ export function Footer() {
             </div>
           </div>
         </div>
-
-        {/* Random Quote Section */}
-        <RandomQuote />
 
         {/* Bottom section */}
         <div className="pt-8 border-t border-white/10">

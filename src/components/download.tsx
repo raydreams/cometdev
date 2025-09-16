@@ -160,52 +160,6 @@ export function Download() {
           })}
         </div>
 
-        {/* All Downloads Link */}
-        <div className="text-center mb-16">
-          <Button
-            variant="outline"
-            className="border-white/20 text-white hover:bg-white/10 rounded-xl px-6 py-3 flex items-center space-x-2 mx-auto"
-          >
-            <ExternalLink className="w-4 h-4" />
-            <span>View all download options</span>
-          </Button>
-        </div>
-
-        {/* Trust Indicators */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 max-w-4xl mx-auto">
-          {[
-            {
-              icon: Zap,
-              title: "Lightning Fast",
-              desc: "Download in under 30 seconds",
-              color: "text-yellow-400",
-            },
-            {
-              icon: Shield,
-              title: "100% Secure",
-              desc: "Verified and malware-free",
-              color: "text-green-400",
-            },
-            {
-              icon: Rocket,
-              title: "Always Free",
-              desc: "No hidden costs or subscriptions",
-              color: "text-blue-400",
-            },
-          ].map((feature, index) => (
-            <div
-              key={index}
-              className="group p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105 text-center"
-            >
-              <feature.icon
-                className={`w-12 h-12 ${feature.color} mx-auto mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}
-              />
-              <h3 className="text-lg font-semibold text-white mb-2">{feature.title}</h3>
-              <p className="text-gray-300 text-sm group-hover:text-gray-200 transition-colors">{feature.desc}</p>
-            </div>
-          ))}
-        </div>
-
         {/* System Requirements */}
         <div className="max-w-5xl mx-auto">
           <div className="p-8 rounded-3xl bg-gradient-to-br from-white/5 to-white/10 border border-white/20 backdrop-blur-sm">

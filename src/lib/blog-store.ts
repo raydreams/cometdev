@@ -13,6 +13,43 @@ export interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: "1",
+    title: "Comet's Current Phase!",
+    author: "livewray",
+    minecraftSkin: "livewray",
+    headerImage: "/news/news3.png",
+    content: `:emojicomet: Comet Updates & News:
+
+We’re excited to share the latest phase of Comet! With a redesigned website, faster performance, and a stronger focus on our community, things are moving quickly.
+
+### Website Revamp
+
+Our website has been completely refreshed:
+ * Minimal, modern design
+ * Smoother navigation
+ * Faster load times across all devices
+ 
+### Blog & News
+
+ The new **blog** is live! Here, we share updates, news, and insights from the Comet community. It’s the best way to stay connected and informed.
+
+### Launcher Development
+
+The **Comet Launcher** is in active development:
+ * Demo images and videos coming soon
+ * Currently in a barebones state, but evolving quickly
+
+### New Bot Experience
+
+ Our Discord bot has been rebuilt with **Discord Components v2**, making it faster, more reliable, and more interactive.
+
+### What’s Next?
+
+ Stay tuned for early previews of the launcher, more website updates, and exciting new features before the beta release. Thank you for being part of the Comet Client community!`,
+    createdAt: new Date("2025-09-16T12:00:00"),
+    updatedAt: new Date("2025-09-16T12:00:00"),
+  },
+  {
+    id: "2",
     title: "Welcome to our blog!",
     author: "PrinceofTheLand",
     minecraftSkin: "PrinceofTheLand",
@@ -35,7 +72,7 @@ Thank you for being part of the Comet Client community!`,
     updatedAt: new Date("2025-09-10T12:00:00"),
   },
   {
-    id: "2",
+    id: "3",
     title: "Comet Client Development",
     author: "livewray",
     minecraftSkin: "livewray",
@@ -69,7 +106,7 @@ export function createBlogPost(post: Omit<BlogPost, "id" | "createdAt" | "update
   // Create date at noon to avoid timezone issues
   const now = new Date()
   const noonDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0)
-  
+
   const newPost: BlogPost = {
     ...post,
     id: Date.now().toString(),
